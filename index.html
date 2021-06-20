@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 </head>
+
 <body>
-    
+    <input type="number" id="ipSoNguyen" placeholder="nhập số nguyên" />
+    <span id="opSoNguyen"></span>
+    <br />
+    <input type="button" value="Lưu" onclick="nhanSoNguyen()" />
+    <br />
+    <input type="button" value="Tổng các số dương" onclick="tinhTongSoDuong()" />
+
+    <span id="opBaiMot"></span>
+    <br />
+    <input type="button" value="Bao nhiêu số duong trong mảng" onclick="demSoDuong()" />
+    <span id="opBaiHai"></span>
+    <br />
+    <input type="button" value="Số nhỏ nhất trong mảng" onclick="timSoNhoNhat()" />
+    <span id="opSoNhoNhat"></span>
+    <br />
+    <input type="button" value="Số dương nhỏ nhất" onclick="timSoDuongNhoNhat()" />
+    <span id="opSoDuongLonNhat"></span>
+    <br />
+    <input type="button" value="Tìm sô chẵn cuối cùng trong mảng" onclick="timSoChanTrongMang()" />
+    <span id="opSoChan"></span>
+    <br />
+    <input type="number" placeholder="vị trí đầu tiên muốn đổi" id="viTriMot" />
+    <input type="number" placeholder="vị trí thứ hai` muốn đổi" id="viTriHai" />
+    <input type="button" value="Đổi chỗ" onclick="changePosition()" />
+    <span id="opDoiCho"></span>
+    <br />
+    <input type="button" value="Sắp xếp tăng dần" onclick="DemTangDan()" />
+    <span id="opTangDan"></span>
+    <br />
+    <input type="button" value="Tìm số nguyên tố đầu tiên trong mảng" onclick="timSoNguyenTo()" />
+    <span id="opSoNguyenTo"></span>
+    <br />
+    <input type="text" placeholder="Nhập số thực" id="everyNumber" />
+    <span id="opMangSoThuc"></span>
+    <br />
+    <input type="button" value="Lưu" onclick="nhanSoThuc()" />
+    <input type="button" value="Có bao nhiêu số nguyên" onclick="timBaoNhieuSoNguyen()" />
+    <span id="opEveryNumber"></span>
+    <br>
+    <input type="button" value="So sánh âm dương" onclick="demSoLuongAmDuong()">
+    <span id="opSoSanhAmDuong"></span>
+    <script src="./main.js"></script>
 </body>
+
 </html>
