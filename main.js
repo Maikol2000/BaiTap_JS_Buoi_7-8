@@ -159,32 +159,31 @@ function timBaoNhieuSoNguyen() {
 }
 
 // bài 10
-var opSoSanhAmDuong = getElm('opSoSanhAmDuong')
+var opSoSanhAmDuong = getElm("opSoSanhAmDuong");
 function demSoLuongAmDuong() {
-  var soDuong = 0,
-    soAm = 0,
-
+  var soDuong = 0;
+  var soAm = 0;
 
   for (i = 0; i < danhSachSoNguyen.length; i++) {
     if (danhSachSoNguyen[i] > 0) {
-      soDuong++
+      soDuong++;
     }
     if (danhSachSoNguyen[i] < 0) {
-      soAm++
+      soAm++;
     }
   }
   for (i = 0; i < danhSachSoNguyen.length; i++) {
     if (danhSachSoThuc[i] > 0) {
-      soDuong++
+      soDuong++;
     }
     if (danhSachSoThuc[i] < 0) {
-      soAm++
+      soAm++;
     }
   }
   if (soAm < soDuong) {
-    opSoSanhAmDuong.innerHTML = soDuong
+    opSoSanhAmDuong.innerHTML = soDuong;
   }
   if (soAm > soDuong) {
-    opSoSanhAmDuong.innerHTML = soAm
+    opSoSanhAmDuong.innerHTML = soAm;
   }
 }
