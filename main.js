@@ -136,7 +136,7 @@ function nhanSoThuc() {
 
   danhSachSoThuc.push(everyNumber);
 
-  opMangSoThuc.innerHTML = everyNumber;
+  opMangSoThuc.innerHTML = danhSachSoThuc;
 }
 function timBaoNhieuSoNguyen() {
   var tongSoNguyenMot = 0;
@@ -155,7 +155,7 @@ function timBaoNhieuSoNguyen() {
 
   maxSoNguyen = tongSoNguyenHai + tongSoNguyenMot;
   opEveryNumber.innerHTML =
-    "Tổng các số nguyên cả hai mảng số là: " + maxSoNguyen;
+    "Tổng các số nguyên là: " + maxSoNguyen;
 }
 
 // bài 10
@@ -163,7 +163,7 @@ var opSoSanhAmDuong = getElm("opSoSanhAmDuong");
 function demSoLuongAmDuong() {
   var soDuong = 0;
   var soAm = 0;
-
+debugger
   for (i = 0; i < danhSachSoNguyen.length; i++) {
     if (danhSachSoNguyen[i] > 0) {
       soDuong++;
@@ -181,9 +181,11 @@ function demSoLuongAmDuong() {
     }
   }
   if (soAm < soDuong) {
-    opSoSanhAmDuong.innerHTML = soDuong;
+    opSoSanhAmDuong.innerHTML = 'Số dương nhiều hơn'
   }
   if (soAm > soDuong) {
-    opSoSanhAmDuong.innerHTML = soAm;
+    opSoSanhAmDuong.innerHTML = 'Số âm nhiều hơn'
+  } if(soAm == soDuong){
+    opSoSanhAmDuong.innerHTML = 'Bằng nhau'
   }
 }
