@@ -165,24 +165,26 @@ function demSoLuongAmDuong() {
     soAm = 0,
 
 
-  for(i = 0; i < danhSachSoNguyen.length; i++) {
-    if(danhSachSoNguyen[i] > 0) {
+  for (i = 0; i < danhSachSoNguyen.length; i++) {
+    if (danhSachSoNguyen[i] > 0) {
       soDuong++
     }
-    if(danhSachSoThuc[i] > 0) {
-      soDuong++
-    }
-    if(danhSachSoNguyen[i] < 0) {
-      soAm++
-    }
-    if(danhSachSoThuc[i] < 0) {
+    if (danhSachSoNguyen[i] < 0) {
       soAm++
     }
   }
-  if(soAm < soDuong) {
+  for (i = 0; i < danhSachSoNguyen.length; i++) {
+    if (danhSachSoThuc[i] > 0) {
+      soDuong++
+    }
+    if (danhSachSoThuc[i] < 0) {
+      soAm++
+    }
+  }
+  if (soAm < soDuong) {
     opSoSanhAmDuong.innerHTML = soDuong
   }
-  if(soAm > soDuong) {
+  if (soAm > soDuong) {
     opSoSanhAmDuong.innerHTML = soAm
   }
 }
